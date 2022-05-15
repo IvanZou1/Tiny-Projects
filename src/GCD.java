@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 /*
+ *
  * GCD - Find the greatest common denominator between two integers using
  * Euclid's Algorithm
  *

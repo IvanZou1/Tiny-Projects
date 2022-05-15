@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 /*
+ *
  * Fibonacci Sequence - Find the nth number of the fibonacci sequence and the
  * n numbers in the sequence
  *
