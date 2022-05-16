@@ -23,7 +23,7 @@ public class Fibonacci {
         }
     }
 
-    public static int[] fibonacciSequence(int n) {
+    private static int[] fibonacciSequence(int n) {
         if (n < 1) {
             throw new IllegalArgumentException();
         } else if (n == 1) {

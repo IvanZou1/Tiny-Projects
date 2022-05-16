@@ -24,7 +24,7 @@ public class MergeSort {
         System.out.println("The Sorted Array: " + arrToString(arr));
     }
 
-    public static String arrToString(int[] arr) {
+    private static String arrToString(int[] arr) {
         StringBuilder str = new StringBuilder("[");
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length - 1) {
