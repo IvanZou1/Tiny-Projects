@@ -25,8 +25,7 @@ public class MergeSort {
     }
 
     public static String arrToString(int[] arr) {
-        StringBuilder str = new StringBuilder();
-        str.append("[");
+        StringBuilder str = new StringBuilder("[");
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length - 1) {
                 str.append(arr[i]);
