@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Fibonacci {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Input number for Fibonacci Sequence: ");
+        System.out.print("Input a positive number for Fibonacci Sequence: ");
         int input = sc.nextInt();
         // O(n)
         int[] seq = fibonacciSequence(input);
@@ -25,7 +25,7 @@ public class Fibonacci {
 
     private static int[] fibonacciSequence(int n) {
         if (n < 1) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Invalid Input: Please Enter a Positive Number");
         } else if (n == 1) {
             return new int[]{0};
         } else if (n == 2) {
