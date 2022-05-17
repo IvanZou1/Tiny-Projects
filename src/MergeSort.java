@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
  *
  * MergeSort - A divide and conquer algorithm that sorts an integer array
- * in increasing order in O(nlogn) for n = array size
+ * in increasing order in O(nlogn) time for n = array size
  *
  */
 
