@@ -4,3 +4,4 @@
 - **Fibonacci** - Finds the nth number in the Fibonacci Sequence and all n numbers in the sequence using Dynamic Programming.
 - **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
 - **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time for n = array size.
+- **ReverseString** - The user enters a string and this program outputs the string reversed.
