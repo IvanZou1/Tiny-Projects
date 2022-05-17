@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
  *
  * FastExponentiation - The user enters 2 integers a and b and this program
- * outputs the value a^b in O(lgn) time for n = b
+ * outputs the value a^b in O(lgn) time for n = b using a divide and conquer algorithm
  *
  */
 
