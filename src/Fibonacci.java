@@ -21,6 +21,7 @@ public class Fibonacci {
         for (int num : seq) {
             System.out.print(num + ", ");
         }
+        sc.close();
     }
 
     private static int[] fibonacciSequence(int n) {
