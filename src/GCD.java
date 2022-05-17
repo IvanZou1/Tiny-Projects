@@ -15,7 +15,8 @@ public class GCD {
         int in1 = sc.nextInt();
         int in2 = sc.nextInt();
         int gcd = findGCD(in1, in2);
-        System.out.println("The Greatest Common Denominator of " + in1 + " and " + in2 + " is " + gcd);
+        System.out.println("The Greatest Common Denominator of " +
+                in1 + " and " + in2 + " is " + gcd);
         sc.close();
     }
 
