@@ -20,8 +20,7 @@ public class GCD {
         sc.close();
     }
 
-    // Euclid's Algorithm
-    // O(log(num2))
+    // Euclid's Algorithm | O(log(num2))
     private static int findGCD(int num1, int num2) {
         // Make negative integer inputs positive
         int a = (num1 < 0 ? -1 * num1 : num1);
