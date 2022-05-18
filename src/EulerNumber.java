@@ -7,7 +7,7 @@ import java.util.Scanner;
  *
  */
 
-public class EulersNumber {
+public class EulerNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Find Euler's Number to the nth decimal!");
