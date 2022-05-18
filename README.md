@@ -1,5 +1,6 @@
 # Tiny-Projects
 - **ChangeReturn** - The users enters a cost and the amount of money given, and this program outputs the amount of change in common bills and coins.
+- **FactorialFinder** - Find the nth factorial using both loops and recursion.
 - **FastExponentiation** - The user enters 2 integers, a and b, and this program outputs the value a^b in O(lgn) time for n = b using a divide and conquer algorithm.
 - **Fibonacci** - Finds the nth number in the Fibonacci Sequence and all n numbers in the sequence using Dynamic Programming.
 - **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
