@@ -1,4 +1,5 @@
 # Tiny-Projects
+- **BinaryNumberConverter** - The users chooses to either convert a binary number to the decimal number system or a decimal number to a binary number, then the user enters the respective number they want to convert, and this program outputs the conversion.
 - **ChangeReturn** - The users enters a cost and the amount of money given, and this program outputs the amount of change in common bills and coins.
 - **Euler's Number** - Find Euler's Number (e) to the nth decimal with a limit of 60 decimal places.
 - **FactorialFinder** - Find the nth factorial using both loops and recursion.
