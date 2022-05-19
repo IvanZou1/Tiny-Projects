@@ -12,11 +12,15 @@ public class FactorialFinder {
         System.out.println("Find the Factorial!");
         System.out.print("Input a positive number: ");
         int input = sc.nextInt();
+        checkIfInvalidInput(input);
+        System.out.println("Loop: " + input + "! = " + loopFactorial(input));
+        System.out.println("Recursion: " + input + "! = " + recursiveFactorial(input));
+    }
+
+    private static void checkIfInvalidInput(int input) {
         if (input < 0) {
             throw new IllegalArgumentException("Invalid Input: Please Enter a Positive Number");
         }
-        System.out.println("Loop: " + input + "! = " + loopFactorial(input));
-        System.out.println("Recursion: " + input + "! = " + recursiveFactorial(input));
     }
 
     private static int loopFactorial(int n) {
