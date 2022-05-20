@@ -21,6 +21,7 @@
 - **PI** - Find PI to the nth decimal with a limit of 60 decimal places.
 - **PrimeFactorization** - Find all prime factors of an integer n in O(n).
 - **PrimeNumbers** - Find all prime numbers from 0 to n.
+- **TemperatureConverter** - The user first choose their starting temperature system and enter the temperature value. Then, this program converts the input temperature to the other two temperature systems and outputs the conversion.
 - **TileCost** - The user enters the length (L) and width (W) of a floor plan and the length and cost of a single square tile, and this program outputs the total cost of tiles to fill the L by W floor and the number of tiles needed.
 
 ## Strings
