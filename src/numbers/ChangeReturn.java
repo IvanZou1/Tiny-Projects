@@ -2,6 +2,8 @@ package numbers;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.NumberFormat;
+import java.util.Locale;
 import java.util.Scanner;
 
 /*
@@ -28,7 +30,7 @@ public class ChangeReturn {
         if (cost.compareTo(pay) > 0) {
             System.out.println("Insufficient payment for this purchase!");
             double owe = cost.subtract(pay).doubleValue();
-            System.out.println("You owe $" + owe);
+            System.out.println("You owe " + formatMoney(owe));
         } else if (cost.compareTo(pay) == 0) {
             System.out.println("No Change");
         } else {
@@ -41,6 +43,15 @@ public class ChangeReturn {
 
     private static boolean invalidInput(BigDecimal input) {
         return input.compareTo(BigDecimal.valueOf(0)) < 0;
+    }
+
+    private static String formatMoney(double money) {
+        Locale us = new Locale("en", "US");
+        NumberFormat formatter = NumberFormat.getCurrencyInstance(us);
+        formatter.setMaximumFractionDigits(2);
+        formatter.setMinimumFractionDigits(2);
+        formatter.setGroupingUsed(true);
+        return formatter.format(money);
     }
 
     private static int[] getChangeArray(BigDecimal change) {
@@ -74,11 +85,17 @@ public class ChangeReturn {
 
     private static void stringHelperBills(int count, String billType, StringBuilder str) {
         if (count != 0) {
-            str.append(count);
+            str.append(formatNumber(count));
             str.append(" ");
             str.append(billType);
             str.append(count == 1 ? " Bill, " : " Bills, ");
         }
+    }
+
+    private static String formatNumber(int count) {
+        NumberFormat formatter = NumberFormat.getIntegerInstance();
+        formatter.setGroupingUsed(true);
+        return formatter.format(count);
     }
 
     private static void stringHelperCoins(int count, String coinType, StringBuilder str) {
