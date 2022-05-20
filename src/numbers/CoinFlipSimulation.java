@@ -2,6 +2,7 @@ package numbers;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 /*
@@ -49,9 +50,9 @@ public class CoinFlipSimulation {
         double tailProbability = BigDecimal.valueOf((tails * 1.0) / trial)
                 .setScale(4, RoundingMode.HALF_UP).doubleValue();
         System.out.println("Pr[HEADS] = " + heads + "/" + trial + " = " +
-                headProbability + " = " + (headProbability * 100) + "%");
+                headProbability + " = " + formatPercent(headProbability));
         System.out.println("Pr[TAILS] = " + tails + "/" + trial + " = " +
-                tailProbability + " = " + (tailProbability * 100) + "%");
+                tailProbability + " = " + formatPercent(tailProbability));
         System.out.println("__________________________________________________");
         System.out.println("Theoretical Probabilities: ");
         System.out.println("Pr[HEADS] = Pr[TAILS] = 1/2 = 0.50 = 50%");
@@ -61,5 +62,12 @@ public class CoinFlipSimulation {
     private static int flipCoin() {
         // 0 = TAILS | 1 = HEADS
         return BigDecimal.valueOf(Math.random()).setScale(0, RoundingMode.HALF_UP).intValue();
+    }
+
+    private static String formatPercent(double value) {
+        NumberFormat formatter = NumberFormat.getPercentInstance();
+        formatter.setMaximumFractionDigits(2);
+        formatter.setMinimumFractionDigits(2);
+        return formatter.format(value);
     }
 }
