@@ -10,6 +10,7 @@
 - **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time for n = array size.
 - **PI** - Find PI to the nth decimal with a limit of 60 decimal places.
 - **Palindrome** - The user enters a string and this program checks if the string is a palindrome. That is the string is the same forwards and backwards (ie. "kayak", "racecar", "mom").
+- **PrimeFactorization** - Find all prime factors of an integer n in O(n).
 - **ReverseString** - The user enters a string and this program outputs the string reversed.
 - **VowelCount** - The user enters a string and this program outputs the number of each vowel and the total number of vowels in the string.
 - **WordCount** - The user enters a string and this program outputs the total number of words, character, and characters excluding spaces in the string
