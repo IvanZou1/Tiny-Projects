@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class MergeSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Sorting an integer array using Merge Sort!");
+        System.out.println("Sort an integer array using Merge Sort!");
         System.out.println("Input the number of integers in the array: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
