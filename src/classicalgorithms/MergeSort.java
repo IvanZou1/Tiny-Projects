@@ -1,3 +1,5 @@
+package classicalgorithms;
+
 import java.util.Scanner;
 
 /*
