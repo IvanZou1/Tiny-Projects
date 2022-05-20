@@ -1,4 +1,14 @@
 # Tiny-Projects
+## Table of Contents -
+- [Classic Algorithms](#classic-algorithms)
+- [Numbers](#numbers)
+- [Strings](#strings)
+
+## Classic Algorithms
+- **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
+- **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time for n = array size.
+
+## Numbers
 - **BinaryNumberConverter** - The users chooses to either convert a binary number to the decimal number system or a decimal number to a binary number, then the user enters the respective number they want to convert, and this program outputs the conversion.
 - **ChangeReturn** - The users enters a cost and the amount of money given, and this program outputs the amount of change in common bills and coins.
 - **CoinFlipSimulation** - The user continuously flips a fair coin until they decide to stop, and this program outputs the total number of heads and tails and its respective experimental probabilities.
@@ -6,12 +16,13 @@
 - **FactorialFinder** - Find the nth factorial using both loops and recursion.
 - **FastExponentiation** - The user enters 2 integers, a and b, and this program outputs the value a^b in O(lgn) time for n = b using a divide and conquer algorithm.
 - **Fibonacci** - Finds the nth number in the Fibonacci Sequence and all n numbers in the sequence using Dynamic Programming.
-- **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
-- **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time for n = array size.
 - **PI** - Find PI to the nth decimal with a limit of 60 decimal places.
-- **Palindrome** - The user enters a string and this program checks if the string is a palindrome. That is the string is the same forwards and backwards (ie. "kayak", "racecar", "mom").
 - **PrimeFactorization** - Find all prime factors of an integer n in O(n).
 - **PrimeNumbers** - Find all prime numbers from 0 to n.
-- **ReverseString** - The user enters a string and this program outputs the string reversed.
-- **VowelCount** - The user enters a string and this program outputs the number of each vowel and the total number of vowels in the string.
-- **WordCount** - The user enters a string and this program outputs the total number of words, character, and characters excluding spaces in the string
+
+## Strings
+- **Palindrome** - The user enters a strings and this program checks if the strings is a palindrome. That is the strings is the same forwards and backwards (ie. "kayak", "racecar", "mom").
+- **ReverseString** - The user enters a strings and this program outputs the strings reversed.
+- **VowelCount** - The user enters a strings and this program outputs the number of each vowel and the total number of vowels in the strings.
+- **WordCount** - The user enters a strings and this program outputs the total number of words, character, and characters excluding spaces in the strings
+
