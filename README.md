@@ -8,6 +8,7 @@
 - **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
 - **InsertionSort** - An iterative algorithm that sorts an integer array in increasing order in O(n^2) time for n = array size.
 - **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time for n = array size.
+- **QuickSort** - A divide and conquer algorithm that sorts an integer array in increasing order in expected O(nlogn) time and worst-case O(n^2) time for n = array size.
 
 ## Numbers
 - **BinaryNumberConverter** - The users chooses to either convert a binary number to the decimal number system or a decimal number to a binary number, then the user enters the respective number they want to convert, and this program outputs the conversion.
