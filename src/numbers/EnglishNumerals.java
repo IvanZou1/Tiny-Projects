@@ -36,7 +36,7 @@ public class EnglishNumerals {
                 "Five", "Six", "Seven", "Eight", "Nine"};
         String[] teens = new String[]{
                 "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen",
-                "Sixteen", "Seventeen", " Eighteen", "Nineteen"};
+                "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
         String[] tens = new String[]{
                 "Ten", "Twenty", "Thirty", "Forty", "Fifty",
                 "Sixty", "Seventy", "Eighty", "Ninety"};
