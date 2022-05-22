@@ -30,6 +30,7 @@
 
 ## Strings
 - **Palindrome** - The user enters a strings and this program checks if the strings is a palindrome. That is the strings is the same forwards and backwards (ie. "kayak", "racecar", "mom").
+- **PigLatin** - The user enters an English string (word or phrase), and this program outputs the translation of this string in Pig Latin.
 - **ReverseString** - The user enters a strings and this program outputs the strings reversed.
 - **VowelCount** - The user enters a strings and this program outputs the number of each vowel and the total number of vowels in the strings.
 - **WordCount** - The user enters a strings and this program outputs the total number of words, character, and characters excluding spaces in the strings.
