@@ -19,6 +19,7 @@
 - **FactorialFinder** - Find the nth factorial using both loops and recursion.
 - **FastExponentiation** - The user enters 2 integers, a and b, and this program outputs the value a^b in O(lgn) time for n = b using a divide and conquer algorithm.
 - **Fibonacci** - Finds the nth number in the Fibonacci Sequence and all n numbers in the sequence using Dynamic Programming.
+- **HappyNumbers** - Find the next five "happy numbers" given a starting number. A "happy number" is defined as a number that will eventually equal 1 when continuously replaced by the sum of the squares of each digit.
 - **PI** - Find PI to the nth decimal with a limit of 60 decimal places.
 - **PrimeFactorization** - Find all prime factors of an integer n in O(n).
 - **PrimeNumbers** - Find all prime numbers from 0 to n.
