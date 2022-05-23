@@ -27,31 +27,19 @@ public class TemperatureConverter {
             BigDecimal fahrenheit  = getTemperatureInput(sc);
             double celsius = fahrenheitToCelsius(fahrenheit);
             double kelvin = fahrenheitToKelvin(fahrenheit);
-            System.out.println("__________________________________________________");
-            System.out.println("Fahrenheit: " + formatTemp(fahrenheit.doubleValue()) + "\u00b0F");
-            System.out.println("Celsius: " + formatTemp(celsius) + "\u00b0C");
-            System.out.println("Kevin: " + formatTemp(kelvin) + "K");
-            System.out.println("__________________________________________________");
+            printConversion(fahrenheit.doubleValue(), celsius, kelvin);
         } else if (startTemp == 1) {
             System.out.println("Celsius: ");
             BigDecimal celsius = getTemperatureInput(sc);
             double fahrenheit = celsiusToFahrenheit(celsius);
             double kelvin = celsiusToKelvin(celsius);
-            System.out.println("__________________________________________________");
-            System.out.println("Fahrenheit: " + formatTemp(fahrenheit) + "\u00b0F");
-            System.out.println("Celsius: " + formatTemp(celsius.doubleValue()) + "\u00b0C");
-            System.out.println("Kevin: " + formatTemp(kelvin) + "K");
-            System.out.println("__________________________________________________");
+            printConversion(fahrenheit, celsius.doubleValue(), kelvin);
         } else if (startTemp == 2) {
             System.out.println("Kelvin: ");
             BigDecimal kelvin = getTemperatureInput(sc);
             double fahrenheit = kelvinToFahrenheit(kelvin);
             double celsius = kelvinToCelsius(kelvin);
-            System.out.println("__________________________________________________");
-            System.out.println("Fahrenheit: " + formatTemp(fahrenheit) +  "\u00b0F");
-            System.out.println("Celsius: " + formatTemp(celsius) + "\u00b0C");
-            System.out.println("Kevin: " + formatTemp(kelvin.doubleValue()) + "K");
-            System.out.println("__________________________________________________");
+            printConversion(fahrenheit, celsius, kelvin.doubleValue());
         } else {
             throw new IllegalArgumentException("Invalid Input: Please input 0, 1, or 2");
         }
@@ -73,14 +61,6 @@ public class TemperatureConverter {
         double celsius = fahrenheitToCelsius(fahrenheit);
         double kelvin = celsius + 273.15;
         return BigDecimal.valueOf(kelvin).setScale(2, RoundingMode.HALF_UP).doubleValue();
-    }
-
-    private static String formatTemp(double temp) {
-        NumberFormat formatter = NumberFormat.getNumberInstance();
-        formatter.setGroupingUsed(true);
-        formatter.setMaximumFractionDigits(2);
-        formatter.setMinimumFractionDigits(2);
-        return formatter.format(temp);
     }
 
     private static double celsiusToFahrenheit(BigDecimal celsius) {
@@ -106,4 +86,21 @@ public class TemperatureConverter {
         BigDecimal celsius = kelvin.subtract(twoSeventyThree);
         return celsius.setScale(2, RoundingMode.HALF_UP).doubleValue();
     }
+
+    private static void printConversion(double fahrenheit, double celsius, double kelvin) {
+        System.out.println("__________________________________________________");
+        System.out.println("Fahrenheit: " + formatTemp(fahrenheit) +  "\u00b0F");
+        System.out.println("Celsius: " + formatTemp(celsius) + "\u00b0C");
+        System.out.println("Kevin: " + formatTemp(kelvin) + "K");
+        System.out.println("__________________________________________________");
+    }
+
+    private static String formatTemp(double temp) {
+        NumberFormat formatter = NumberFormat.getNumberInstance();
+        formatter.setGroupingUsed(true);
+        formatter.setMaximumFractionDigits(2);
+        formatter.setMinimumFractionDigits(2);
+        return formatter.format(temp);
+    }
+
 }
