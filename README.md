@@ -38,6 +38,7 @@
 - **WordCount** - The user enters a strings and this program outputs the total number of words, character, and characters excluding spaces in the strings.
 
 #### Note:
-- I want to keep each individual class/program separated from one another, so all methods are private and there is repeated code.
+- I want to keep each individual class/program separated from one another, so all methods are private and there is repeated code between classes/programs.
 - This makes it so that that everything used in each program is all in the same class.
+- I want to keep each class/program separated because each class represents a different "tiny project".
 - I hope you have an outstanding day! 'U' <3 
