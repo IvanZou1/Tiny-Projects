@@ -6,6 +6,7 @@
 - [Note](#note)
 
 ## Classic Algorithms
+- **BubbleSort** - An iterative algorithm that sorts an integer array in increasing order in O(n^2) time.
 - **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
 - **InsertionSort** - An iterative algorithm that sorts an integer array in increasing order in O(n^2) time.
 - **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time.
