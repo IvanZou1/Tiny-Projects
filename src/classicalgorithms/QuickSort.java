@@ -8,7 +8,6 @@ import java.util.Scanner;
  *
  * QuickSort - A divide and conquer algorithm that sorts an integer array
  * in increasing order in expected O(nlogn) time and worst-case O(n^2) time
- * for n = array size
  *
  */
 

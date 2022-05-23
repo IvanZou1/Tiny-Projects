@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  *
  * InsertionSort - An iterative algorithm that sorts an integer array
- * in increasing order in O(n^2) time for n = array size
+ * in increasing order in O(n^2) time
  *
  */
 
