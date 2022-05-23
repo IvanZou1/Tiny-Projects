@@ -25,6 +25,7 @@ public class SalesTaxCalculator {
         System.out.println("US State Sales Tax Calculator!");
         System.out.print("Enter the Cost: ");
         BigDecimal cost = sc.nextBigDecimal();
+        cost = cost.setScale(2, RoundingMode.HALF_UP);
         System.out.print("Enter the USPS Abbreviation of a State or a Tax Rate: ");
         String input = sc.next().toUpperCase();
         BigDecimal taxRate = null;
