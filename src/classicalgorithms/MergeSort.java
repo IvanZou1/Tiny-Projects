@@ -41,7 +41,7 @@ public class MergeSort {
         return str.toString();
     }
 
-    // O(nlogn) for n = arr.length
+    // O(nlogn) | T(n) = T(n/2) + O(n)
     private static void mergeSort(int[] arr, int leftIndex, int rightIndex) {
         if (leftIndex < rightIndex) {
             int midIndex = (leftIndex + (rightIndex - 1)) / 2;
