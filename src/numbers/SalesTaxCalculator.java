@@ -23,9 +23,10 @@ public class SalesTaxCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("US State Sales Tax Calculator!");
-        System.out.print("Enter the Cost: ");
+        System.out.print("Enter the Cost: $");
         BigDecimal cost = sc.nextBigDecimal();
         cost = cost.setScale(2, RoundingMode.HALF_UP);
+        checkIfInvalid(cost);
         System.out.print("Enter the USPS Abbreviation of a State or a Tax Rate: ");
         String input = sc.next().toUpperCase();
         BigDecimal taxRate = null;
@@ -48,6 +49,12 @@ public class SalesTaxCalculator {
                 " | Tax Rate: " + taxRateStr);
         System.out.println("Tax: " + formatMoney(tax.doubleValue()));
         System.out.println("Total Cost: " + formatMoney(total.doubleValue()));
+    }
+
+    private static void checkIfInvalid(BigDecimal input) {
+        if (input.doubleValue() <= 0) {
+            throw new IllegalArgumentException("Invalid Input: Please Enter a Positive Number");
+        }
     }
 
     private static void initializeStateTaxesMap() {
