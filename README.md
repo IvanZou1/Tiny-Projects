@@ -6,9 +6,9 @@
 
 ## Classic Algorithms
 - **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
-- **InsertionSort** - An iterative algorithm that sorts an integer array in increasing order in O(n^2) time for n = array size.
-- **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time for n = array size.
-- **QuickSort** - A divide and conquer algorithm that sorts an integer array in increasing order in expected O(nlogn) time and worst-case O(n^2) time for n = array size.
+- **InsertionSort** - An iterative algorithm that sorts an integer array in increasing order in O(n^2) time.
+- **MergeSort** - A divide and conquer algorithm that sorts an integer array in increasing order in O(nlogn) time.
+- **QuickSort** - A divide and conquer algorithm that sorts an integer array in increasing order in expected O(nlogn) time and worst-case O(n^2) time.
 
 ## Numbers
 - **BinaryNumberConverter** - The users chooses to either convert a binary number to the decimal number system or a decimal number to a binary number, then the user enters the respective number they want to convert, and this program outputs the conversion.
@@ -35,3 +35,6 @@
 - **VowelCount** - The user enters a strings and this program outputs the number of each vowel and the total number of vowels in the strings.
 - **WordCount** - The user enters a strings and this program outputs the total number of words, character, and characters excluding spaces in the strings.
 
+#### Note:
+- I want to keep each individual class/program separated from one another, so all methods are private and there is repeated code. 
+- I hope you have an outstanding day! 'U' <3 
