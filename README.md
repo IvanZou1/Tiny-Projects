@@ -3,6 +3,7 @@
 - [Classic Algorithms](#classic-algorithms)
 - [Numbers](#numbers)
 - [Strings](#strings)
+- [Note](#note)
 
 ## Classic Algorithms
 - **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
@@ -36,5 +37,6 @@
 - **WordCount** - The user enters a strings and this program outputs the total number of words, character, and characters excluding spaces in the strings.
 
 #### Note:
-- I want to keep each individual class/program separated from one another, so all methods are private and there is repeated code. 
+- I want to keep each individual class/program separated from one another, so all methods are private and there is repeated code.
+- This makes it so that that everything used in each program is all in the same class.
 - I hope you have an outstanding day! 'U' <3 
