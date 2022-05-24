@@ -122,8 +122,8 @@ class Complex {
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder();
-        double realDouble = real.setScale(5, RoundingMode.HALF_UP).doubleValue();
-        double imaginaryDouble = imaginary.setScale(5, RoundingMode.HALF_UP).doubleValue();
+        double realDouble = real.setScale(3, RoundingMode.HALF_UP).doubleValue();
+        double imaginaryDouble = imaginary.setScale(3, RoundingMode.HALF_UP).doubleValue();
         str.append(realDouble);
         boolean imagIsNegative = imaginaryDouble < 0;
         str.append(imagIsNegative ? " - " : " + ");
