@@ -19,14 +19,11 @@ public class ChangeReturn {
         System.out.println("Find the amount of change for your purchase!");
         System.out.print("Input the total cost: $");
         BigDecimal cost = sc.nextBigDecimal();
-        cost = cost.setScale(2, RoundingMode.HALF_UP);
+        cost = cost.setScale(2, RoundingMode.HALF_UP);checkIfInvalid(cost);
         System.out.print("Input the amount of your payment: $");
         BigDecimal pay = sc.nextBigDecimal();
         pay = pay.setScale(2, RoundingMode.HALF_UP);
-        if (invalidInput(cost) || invalidInput(pay)) {
-            throw new IllegalArgumentException(
-                    "Invalid Input: Input cannot be negative");
-        }
+        checkIfInvalid(pay);
         if (cost.compareTo(pay) > 0) {
             System.out.println("Insufficient payment for this purchase!");
             double owe = cost.subtract(pay).doubleValue();
@@ -41,8 +38,10 @@ public class ChangeReturn {
         sc.close();
     }
 
-    private static boolean invalidInput(BigDecimal input) {
-        return input.compareTo(BigDecimal.valueOf(0)) < 0;
+    private static void checkIfInvalid(BigDecimal input) {
+        if (input.compareTo(BigDecimal.valueOf(0)) < 0) {
+            throw new IllegalArgumentException("Invalid Input: Please Enter a Non-Negative Number");
+        }
     }
 
     private static String formatMoney(double money) {
