@@ -15,7 +15,7 @@ public class QuickSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Sort an integer array using Quick Sort!");
-        System.out.println("Input the number of integers in the array: ");
+        System.out.print("Input the number of integers in the array: ");
         int n = sc.nextInt();
         int[] arr = new int[n];
         System.out.println("Input the " + n + " integers for the array: ");
