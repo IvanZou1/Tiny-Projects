@@ -7,6 +7,7 @@
 
 ## Classic Algorithms
 - **BubbleSort** - An iterative algorithm that sorts an integer array in increasing order in O(n^2) time.
+- **ClosestPair** - Find a pair of points, (x1, y2) and (x2, y2), with the smallest distance between them given n points in the Cartesian coordinate plane.
 - **GCD** - Finds the greatest common denominator between two integers using Euclid's Algorithm.
 - **HeapSort** - An iterative algorithm that uses the max-heap date structure to sort an integer array in increasing order in O(nlogn) time.
 - **InsertionSort** - An iterative algorithm that sorts an integer array in increasing order in O(n^2) time.
