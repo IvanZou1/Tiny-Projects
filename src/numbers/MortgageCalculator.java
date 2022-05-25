@@ -24,6 +24,7 @@ public class MortgageCalculator {
         checkIfInvalid(term);
         System.out.print("Enter the Annual Interest Rate (%): ");
         double interestRate = sc.nextDouble();
+        sc.close();
         checkIfInvalid(interestRate);
         double monthlyPayments = calculateMonthlyPayments(loan, interestRate, term);
         double owed = calculateTotalOwed(monthlyPayments, term);

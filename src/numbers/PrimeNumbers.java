@@ -15,6 +15,7 @@ public class PrimeNumbers {
         System.out.println("Find All Prime Numbers from 0 to n.");
         System.out.print("Input an Integer for n: ");
         int input = sc.nextInt();
+        sc.close();
         LinkedList<Integer> primes = getPrimes(input);
         print(primes, input);
     }

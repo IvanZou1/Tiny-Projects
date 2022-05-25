@@ -24,6 +24,7 @@ public class HappyNumbers {
         System.out.println("Happy Numbers!");
         System.out.print("Enter a Positive Number as a Starting Number: ");
         int start = sc.nextInt();
+        sc.close();
         checkIfInvalid(start);
         LinkedList<Integer> happyNumbers = getFiveHappyNumbers(start);
         printList(happyNumbers, start);

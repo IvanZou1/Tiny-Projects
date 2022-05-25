@@ -38,6 +38,7 @@ public class CoinFlipSimulation {
             System.out.print("To Continue Flipping, Enter \"Y\": ");
             continueFlip = sc.next().equalsIgnoreCase("y");
         } while (continueFlip);
+        sc.close();
         int heads = outcomes[1];
         int tails = outcomes[0];
         System.out.println("__________________________________________________");

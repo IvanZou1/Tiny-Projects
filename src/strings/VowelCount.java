@@ -17,6 +17,7 @@ public class VowelCount {
         System.out.println("Find the Number of Vowels in the String!");
         System.out.print("Input a string: ");
         String in = sc.nextLine().toLowerCase();
+        sc.close();
         int[] vowelCount = countVowels(in);
         System.out.print("Vowel Count: ");
         for (int i = 0; i < VOWELS.length; i++) {

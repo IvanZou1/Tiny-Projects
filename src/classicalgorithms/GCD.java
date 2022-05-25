@@ -16,10 +16,10 @@ public class GCD {
         System.out.println("Input Two Integers:");
         int in1 = sc.nextInt();
         int in2 = sc.nextInt();
+        sc.close();
         int gcd = findGCD(in1, in2);
         System.out.println("The Greatest Common Denominator of " +
                 in1 + " and " + in2 + " is " + gcd);
-        sc.close();
     }
 
     // Euclid's Algorithm | O(log(num2))

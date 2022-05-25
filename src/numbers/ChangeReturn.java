@@ -19,9 +19,11 @@ public class ChangeReturn {
         System.out.println("Find the amount of change for your purchase!");
         System.out.print("Input the total cost: $");
         BigDecimal cost = sc.nextBigDecimal();
-        cost = cost.setScale(2, RoundingMode.HALF_UP);checkIfInvalid(cost);
+        cost = cost.setScale(2, RoundingMode.HALF_UP);
+        checkIfInvalid(cost);
         System.out.print("Input the amount of your payment: $");
         BigDecimal pay = sc.nextBigDecimal();
+        sc.close();
         pay = pay.setScale(2, RoundingMode.HALF_UP);
         checkIfInvalid(pay);
         if (cost.compareTo(pay) > 0) {
@@ -35,7 +37,6 @@ public class ChangeReturn {
             int[] billsAndCoins = getChangeArray(change);
             System.out.println("Your Change is " + arrayOfChangeToString(billsAndCoins));
         }
-        sc.close();
     }
 
     private static void checkIfInvalid(BigDecimal input) {

@@ -27,6 +27,7 @@ public class ComplexNumberAlgebra {
         BigDecimal a2 = sc.nextBigDecimal();
         System.out.print("b = ");
         BigDecimal b2 = sc.nextBigDecimal();
+        sc.close();
         Complex num1 = new Complex(a1, b1);
         Complex num2 = new Complex(a2, b2);
         printComplexNumber(num1);

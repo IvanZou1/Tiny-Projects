@@ -23,10 +23,10 @@ public class QuickSort {
             System.out.print(i + 1 + ") ");
             arr[i] = sc.nextInt();
         }
+        sc.close();
         System.out.println("Your Original Array: " + arrToString(arr));
         quickSort(arr, 0, arr.length - 1);
         System.out.println("The Sorted Array: " + arrToString(arr));
-        sc.close();
     }
 
     private static String arrToString(int[] arr) {

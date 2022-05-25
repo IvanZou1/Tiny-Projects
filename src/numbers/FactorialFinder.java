@@ -14,6 +14,7 @@ public class FactorialFinder {
         System.out.println("Find the Factorial!");
         System.out.print("Input a positive number: ");
         int input = sc.nextInt();
+        sc.close();
         checkIfInvalidInput(input);
         System.out.println("Loop: " + input + "! = " + loopFactorial(input));
         System.out.println("Recursion: " + input + "! = " + recursiveFactorial(input));

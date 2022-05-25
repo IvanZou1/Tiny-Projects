@@ -29,6 +29,7 @@ public class ClosestPair {
             int y = sc.nextInt();
             points[i] = new Point(x, y);
         }
+        sc.close();
         System.out.println("__________________________________________________");
         System.out.println("Points in the Plane: ");
         printPoints(points);

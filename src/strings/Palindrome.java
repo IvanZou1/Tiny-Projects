@@ -16,6 +16,7 @@ public class Palindrome {
         System.out.println("Find If The String is a Palindrome!");
         System.out.print("Input the string: ");
         String in = sc.nextLine();
+        sc.close();
         String compare = in.toLowerCase().replaceAll(" ", "");
         StringBuilder reversed = new StringBuilder(compare).reverse();
         boolean isPalindrome = compare.equals(reversed.toString());

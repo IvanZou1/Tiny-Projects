@@ -30,6 +30,7 @@ public class TileCost {
         checkIfInvalid(tileLength);
         System.out.print("Enter the Cost of One Tile: $");
         BigDecimal tileCost = sc.nextBigDecimal();
+        sc.close();
         tileCost = tileCost.setScale(2, RoundingMode.UP);
         checkIfInvalid(tileCost);
         double totalCost = calculateTotalCost(length, width, tileLength, tileCost);

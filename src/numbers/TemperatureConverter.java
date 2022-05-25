@@ -43,6 +43,7 @@ public class TemperatureConverter {
         } else {
             throw new IllegalArgumentException("Invalid Input: Please input 0, 1, or 2");
         }
+        sc.close();
     }
 
     private static BigDecimal getTemperatureInput(Scanner sc) {

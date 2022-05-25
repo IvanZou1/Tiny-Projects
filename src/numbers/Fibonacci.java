@@ -14,16 +14,14 @@ public class Fibonacci {
         Scanner sc = new Scanner(System.in);
         System.out.print("Input a positive number for Fibonacci Sequence: ");
         int input = sc.nextInt();
+        sc.close();
         // O(n)
         int[] seq = fibonacciSequence(input);
-
         System.out.println(input + "th Number of the Fibonacci Sequence is " + seq[input - 1]);
-
         // O(n)
         for (int num : seq) {
             System.out.print(num + ", ");
         }
-        sc.close();
     }
 
     private static int[] fibonacciSequence(int n) {

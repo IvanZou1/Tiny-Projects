@@ -14,6 +14,7 @@ public class PI {
         System.out.println("Find PI to the nth decimal!");
         System.out.print("Input a positive number for n: ");
         int input = sc.nextInt();
+        sc.close();
         if (input < 0) {
             throw new IllegalArgumentException("Invalid Input: Please Enter a Positive Number");
         } else if (input > 60) {

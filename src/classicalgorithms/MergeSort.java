@@ -21,10 +21,10 @@ public class MergeSort {
             System.out.print(i + 1 + ") ");
             arr[i] = sc.nextInt();
         }
+        sc.close();
         System.out.println("Your Original Array: " + arrToString(arr));
         mergeSort(arr, 0, n - 1);
         System.out.println("The Sorted Array: " + arrToString(arr));
-        sc.close();
     }
 
     private static String arrToString(int[] arr) {

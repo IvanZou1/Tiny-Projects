@@ -21,10 +21,10 @@ public class BubbleSort {
             System.out.print(i + 1 + ") ");
             arr[i] = sc.nextInt();
         }
+        sc.close();
         System.out.println("Your Original Array: " + arrToString(arr));
         bubbleSort(arr);
         System.out.println("The Sorted Array: " + arrToString(arr));
-        sc.close();
     }
 
     private static String arrToString(int[] arr) {

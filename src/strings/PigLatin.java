@@ -21,9 +21,9 @@ public class PigLatin {
         System.out.println("Translate to Pig Latin!");
         System.out.print("Enter an English String: ");
         String in = sc.nextLine();
+        sc.close();
         System.out.println(in + " translated to pig latin: ");
         printList(toPigLatin(in));
-        sc.close();
     }
 
     private static LinkedList<String> toPigLatin(String string) {

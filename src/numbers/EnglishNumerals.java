@@ -26,6 +26,7 @@ public class EnglishNumerals {
         System.out.println("English Numerals!");
         System.out.print("Input an Integer: ");
         int input = sc.nextInt();
+        sc.close();
         LinkedList<String> numberWords = getNumberWords(input);
         System.out.println(formatNumber(input) + " in English Words: " + listToString(numberWords));
     }

@@ -15,6 +15,7 @@ public class PrimeFactorization {
         System.out.println("Find All Prime Factors of an Integer!");
         System.out.print("Input an Integer: ");
         int input = sc.nextInt();
+        sc.close();
         int num = input < 0 ? input * -1 : input;
         LinkedList<Integer> primeFactors = getPrimeFactors(num);
         print(primeFactors, input);

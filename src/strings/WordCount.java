@@ -21,6 +21,7 @@ public class WordCount {
         System.out.println("Find the Number of Vowels in the String!");
         System.out.print("Input a string: ");
         String in = sc.nextLine();
+        sc.close();
         System.out.println("Word Count: ");
         int[] wordCount = countWords(in);
         System.out.println("Words: " + wordCount[0]);

@@ -17,6 +17,7 @@ public class FastExponentiation {
         int base = sc.nextInt();
         System.out.print("Input the exponent as an integer: ");
         int exponent = sc.nextInt();
+        sc.close();
         int output = power(base, exponent);
         if (exponent < 0) {
             String expInput = "(" + exponent + ")";

@@ -15,6 +15,7 @@ public class ReverseString {
         System.out.println("Find The Reversed String!");
         System.out.print("Input the string to be reversed: ");
         String in = sc.nextLine();
+        sc.close();
         StringBuilder reversed = new StringBuilder(in).reverse();
         System.out.println("The reversed string is \"" + reversed + "\"");
     }

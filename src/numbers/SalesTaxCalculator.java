@@ -29,6 +29,7 @@ public class SalesTaxCalculator {
         checkIfInvalid(cost);
         System.out.print("Enter the USPS Abbreviation of a State or a Tax Rate: ");
         String input = sc.next().toUpperCase();
+        sc.close();
         BigDecimal taxRate = null;
         String taxRateStr = "";
         initializeStateTaxesMap();

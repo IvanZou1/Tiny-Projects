@@ -33,6 +33,7 @@ public class BinaryNumberConverter {
         } else {
             throw new IllegalArgumentException("Invalid Input: Please input 0 or 1");
         }
+        sc.close();
     }
 
     private static void checkIfInvalidBinary(String binary) {
