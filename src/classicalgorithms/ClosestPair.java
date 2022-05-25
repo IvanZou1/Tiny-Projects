@@ -105,6 +105,7 @@ public class ClosestPair {
         return closest(sortedX, sortedY);
     }
 
+    // O(nlogn)
     private static Point[] closest(Point[] pX, Point[] pY) {
         int n = pX.length;
         if (n <= 3) {
